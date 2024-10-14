@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+/* navbar section */
+.navbar{
+    background-color: #b6ec87;
+}
+.nav-link{
+    font-size: 22px;
+    font-weight: 500;
+    margin:0 10px;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    color: #000;
+   }
+/* navbar section */
+
+.title{
+    color: #83C34C;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom:20px ;
+}
+
+/* faq section */
+.faq-section{
+    margin-top: 30px;
+    padding-top:30px ;
+}
+
+.collapsible{
+    background-color: #b6ec87;
+    color: #414040;
+    border: none;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.collapsible:hover{
+    background-color: #83C34C;
+}
+
+.collapsible::after{
+    content: '\002B';
+    color: #414040;
+    float: right;
+    margin-left: 5;
+}
+
+.activefaq::after{
+    content: '\2212';
+}
+
+.content{
+    padding: 0 18px;
+    font-size: 1.2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+/* faq section */
+
+/* footer section */
+.link{
+    text-align: end;
+    font-size: 1.5rem;
+}
+
+.link a{
+    color: #83C24D;
+    margin-left: 10px;
+}
+
+.footer-close{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-top:15px ;
+    background-color: #83C24D;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-close a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-close a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+/* footer section */

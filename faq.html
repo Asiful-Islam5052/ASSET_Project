@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSET PROJECT/FAQ</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <!-- header section -->
+    <section class="header-section">
+      <div class="container">
+        <!-- navbar section -->
+        
+        <nav class="navbar stiky navbar-expand-lg fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  
+        <!-- navbar section -->
+    </section>
+    <!-- header section -->
+    
+    <!-- faq section start here -->
+    <section class="faq-section">
+        <h2 class="title animate__animated animate__fadeInUpBig" style="margin: 50px 0;">Frequently Asked Question(s)</h2>
+
+        <div class="container">
+            <button class="collapsible">Question 1</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, voluptatibus!</p>
+            </div>
+
+            <button class="collapsible">Question 2</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, voluptatibus!</p>
+            </div>
+
+            <button class="collapsible">Question 3</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, voluptatibus!</p>
+            </div>
+
+            <button class="collapsible">Question 4</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, voluptatibus!</p>
+            </div>
+
+            <button class="collapsible">Question 5</button>
+            <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, voluptatibus!</p>
+    </div>
+        </div>
+    </section>
+    <!-- faq section end here -->
+
+  <div class="container">
+    <hr class="my-5">
+  </div>
+
+  <!-- footer section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-4 ">
+          <a href="#">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <p style="color: #83C34C; font-size: 1.2rem;" id="demo"></p> 
+          <p style="color: #83C34C; font-size: 1.2rem;" id="show"></p>
+        </div>
+
+        <div class="col-md-4">
+          <div class="link">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-close">Design & Developed by <a href="#">Asiful Islam</a></div>
+    </div>
+  </footer>
+
+  <!-- footer section -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+  <script>
+    function myFunction(){
+      alert("Data Submit Successful")
+    }
+  </script>
+
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function(){
+      this.classList.toggle("activefaq");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else{
+        content.style.maxHeight = content.scrollHeight + "px"
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+/* header section */
+.header-section{
+    background-image: url(img/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.stiky{
+    background-color: #b6ec87;
+   .nav-link:hover{
+    color: #000;
+   }
+    
+}
+.nav-link{
+    font-size: 22px;
+    font-weight: 500;
+    margin:0 10px;
+}
+.nav-link:hover{
+    color: #83C34C;
+    text-decoration: underline;
+}
+
+
+.header-section {
+    padding: 300px 0 200px 0;
+}
+
+.header-section .header-content h2{
+    font-size: 3rem;
+}
+
+.animate__fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+  }
+  @-webkit-keyframes fadeInTopLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, -100%, 0);
+      transform: translate3d(-100%, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInTopLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, -100%, 0);
+      transform: translate3d(-100%, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .animate__animated.animate__delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-delay: var(--animate-delay);
+    animation-delay: var(--animate-delay);
+  }
+
+.header-section .header-content h2 span{
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header-content .btn{
+    padding: 10px 60px;
+    background-color:#83C34C;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+.header-content .btn:hover{
+    background-color:#65a32f;
+}
+
+.header-content .btn a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* header section */
+
+.title{
+    color: #83C34C;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom:20px ;
+}
+
+/* service section */
+.service-section{
+    margin-top: 50px;
+}
+
+
+.food-item{
+    padding: 10px;
+}
+
+.food-item:hover{
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .1);
+}
+.food-item .item-info{
+    margin-top:20px ;
+}
+.item-info .btn{
+    padding: 10px 40px;
+    background-color:#83C34C;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+.item-info .btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.item-info .btn:hover{
+    background-color:#65a32f;
+}
+/* service section */
+
+/* review-section */
+.review-section{
+    margin-top: 50px;
+}
+
+.swiper {
+    width: 70%;
+    height: 100%;
+}
+
+.swiper-slide {
+    margin-top: 25px 0;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f7f7;
+    border-radius: 20px;
+}
+
+.swiper-slide .box{
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .1);
+    padding: 2rem;
+}
+
+.swiper-slide .box:hover{
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .3);
+}
+
+.swiper-slide img{
+    width: 200px;
+    height: 150px;
+    border-radius: 60%;
+} 
+
+.swiper-slide p{
+    margin: auto;
+    width: 50%;
+    line-height: 1.8;
+    padding: 30px 0;
+    opacity: .7;
+}
+
+.swiper-slide h3{
+    font-size: 2rem;
+    color: #83C24D;
+}
+
+.swiper-slide .stars{
+    font-size: 1.5rem;
+    color: #83C24D;
+}
+/* review-section */
+
+/* gallery section */
+    .gallery-section{
+        margin-top: 50px;
+    }
+
+    .gallery-img{
+        margin: 10px 0;
+        transition: all .2s linear;
+    }
+
+    .gallery-img:hover{
+        transform:scale(1.1);
+    }
+/* gallery section */
+
+/* footer section */
+.link{
+    text-align: end;
+    font-size: 1.5rem;
+}
+
+.link a{
+    color: #83C24D;
+    margin-left: 10px;
+}
+
+.footer-close{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding-top:15px ;
+    background-color: #83C24D;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-close a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-close a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+/* footer section */
